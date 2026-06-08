@@ -34,6 +34,7 @@ The core optimization pipeline is built entirely in Python and utilizes industry
 * **Language:** Python `3.10.18`
 * **Mathematical Solver:** Gurobi Optimizer `13.0.1` (utilizing native lexicographic multi-objective capabilities)
 * **Data Manipulation:** pandas `2.3.3`
+* **Execution Environment:** Jupyter Notebook `7.4.4` / JupyterLab `4.4.4`
 
 ---
 
@@ -101,8 +102,10 @@ Executing the optimization model requires a working Python environment, an activ
 
 Ensure your environment meets the following technical requirements:
 * **Python:** `3.10.x` (Tested on `3.10.18`)
-* **Libraries:** `pandas` (Tested on `2.3.3`) and `jupyter` (to execute the notebook environment).
-* **Solver:** Gurobi Optimizer (Tested on `13.0.1`) with a valid license (e.g., a free Gurobi Academic License).
+* **Libraries & Environment:** `pandas` (Tested on `2.3.3`) and Jupyter Notebook (Tested on `7.4.4`) or JupyterLab (Tested on `4.4.4`).
+* **Solver:** [Gurobi Optimizer](https://www.gurobi.com/) (Tested on `13.0.1`) with a valid license. 
+    * *Note:* Academic users can obtain a free license via the [Gurobi Academic Licensing Program](https://www.gurobi.com/academics).
+    * *Installation:* For detailed, step-by-step installation instructions for your operating system, please refer to the official [Gurobi Quick Start Guide](https://www.gurobi.com/documentation/quickstart.html).
 
 You can install the required Python packages via pip:
 ```bash
@@ -111,7 +114,7 @@ pip install pandas jupyter
 
 ### 2. Roster Configuration
 
-Before running the model, make sure all `.xlsx` configuration files are set up correctly according to your planning horizon (e.g., configuring requirements, preferences, and the historical schedule from the previous month).
+Before running the model, make sure all `.xlsx` configuration files in the input directory are set up correctly according to your planning horizon (e.g., configuring requirements, preferences, and the historical schedule from the previous month).
 
 ### 3. Execution via Jupyter Notebook
 
